@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2017": "^6.24.1"
+  },
+  "name": "annotate-prototype",
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "> 1%",
+            "last 2 versions"
+          ]
+        }
+      }
+    ]
+  ],
+  "scripts": {
+    "build": "babel js -d public/src"
+  },
+  "version": "1.0.0"
+}
